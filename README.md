@@ -1,1 +1,0 @@
-# VEF2-verkefni-12
