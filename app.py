@@ -6,4 +6,5 @@ def test():
 
 
 if __name__ == "__main__":
-    bottle.run(host='0.0.0.0', port=argv[1])
+    port = int(os.environ.get("PORT", 5000))
+    bottle.run(host='0.0.0.0', port=port)
