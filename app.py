@@ -1,10 +1,9 @@
-import bottle
+import bottle, os
 
-#code
-#code
-#code
-#code
-#code
+@route('/')
+def test():
+    return 'Test'
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
