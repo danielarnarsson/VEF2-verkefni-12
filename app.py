@@ -1,4 +1,4 @@
-from bottle import *
+import bottle
 
 #code
 #code
@@ -6,4 +6,6 @@ from bottle import *
 #code
 #code
 
-run(host="0.0.0.0", port=argv[1], debug=True)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    bottle.run(host='0.0.0.0', port=port)
