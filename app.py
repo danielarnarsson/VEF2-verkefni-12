@@ -1,6 +1,6 @@
 import bottle, os
 
-@route('/')
+@bottle.route('/')
 def test():
     return 'Test'
 
